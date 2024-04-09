@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="alert-box" id="a-box">알림창임</div>
+    <button onclick="controlBox('block')">열기</button>
+    <button onclick="controlBox('none')">닫기</button>
+
+
+    <!-- Vanilla JS Script Code Sector -->
+    <script>
+        function openBox() {
+            document.getElementById('a-box').style.display = 'block';
+        };
+
+        function controlBox(option){
+            document.getElementById('a-box').style.display = option;
+        }
+
+        function closeBox() {
+            document.getElementById('a-box').style.display = 'none';
+        };
+    </script>
+    <!-- --- -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="alert-box" id="a-box">
+        <p id="subTitle">알림창임</p>
+        <button onclick="controlBox('block', '아이디')">아이디토글</button>
+        <button onclick="controlBox('block', '비밀번호')">비밀번호토글</button>
+        <button onclick="controlBox('none', '');">닫기</button>
+    </div>
+
+
+    <button onclick="controlBox('block', '')">박스열기 토글</button> 
+    <button onclick="controlBox('none', '')">박스닫기 토글</button> 
+
+
+
+    <!-- Vanilla JS Script Code Sector -->
+    <script>
+
+
+
+
+
+
+        function controlBox(option,select){
+            document.getElementById('a-box').style.display = option;
+            document.getElementById('subTitle').innerHTML = select + '입력하세요';
+        }
+
+    </script>
+    <!-- --- -->
+
+
+
+</body>
+</html>
